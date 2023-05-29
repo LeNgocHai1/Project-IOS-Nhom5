@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2225D9B62661327100FD018B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225D9B52661327100FD018B /* AppDelegate.swift */; };
+		2225D9B82661327100FD018B /* DangKyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225D9B72661327100FD018B /* DangKyViewController.swift */; };
+		2225D9BB2661327100FD018B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2225D9B92661327100FD018B /* Main.storyboard */; };
+		2225D9BD2661327400FD018B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2225D9BC2661327400FD018B /* Assets.xcassets */; };
+		2225D9C02661327400FD018B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2225D9BE2661327400FD018B /* LaunchScreen.storyboard */; };
+		2225D9CB2661327400FD018B /* Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225D9CA2661327400FD018B /* Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.swift */; };
+		2225D9D8266134B100FD018B /* KhachHang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225D9D7266134B100FD018B /* KhachHang.swift */; };
+		2225D9DA266134E500FD018B /* NhanVien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225D9D9266134E500FD018B /* NhanVien.swift */; };
+		2225D9DC266134FD00FD018B /* VatLieu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225D9DB266134FD00FD018B /* VatLieu.swift */; };
+		2225D9DE2661407600FD018B /* HoaDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225D9DD2661407600FD018B /* HoaDon.swift */; };
+		22436C16266472D400966F56 /* KhachHangHDTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22436C15266472D400966F56 /* KhachHangHDTableViewCell.swift */; };
+		22436C1826648D1100966F56 /* DBHoaDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22436C1726648D1100966F56 /* DBHoaDon.swift */; };
+		22436C1A2664927800966F56 /* HoaDonXemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22436C192664927800966F56 /* HoaDonXemViewController.swift */; };
+		226BA1322663CC5B00D93D39 /* SanPhamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226BA1312663CC5B00D93D39 /* SanPhamTableViewCell.swift */; };
+		226BA1342663CD0D00D93D39 /* HoaDonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226BA1332663CD0D00D93D39 /* HoaDonViewController.swift */; };
+		226DCFB626636D0800687527 /* ListVatLieuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226DCFB526636D0800687527 /* ListVatLieuViewController.swift */; };
+		226DCFB826636D5100687527 /* VatLieuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226DCFB726636D5100687527 /* VatLieuTableViewCell.swift */; };
+		226DCFBA266387EE00687527 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226DCFB9266387EE00687527 /* CustomView.swift */; };
+		226DCFBC2663891D00687527 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226DCFBB2663891D00687527 /* HomeViewController.swift */; };
+		226DCFBE266389C500687527 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226DCFBD266389C500687527 /* MenuCollectionViewCell.swift */; };
+		227307FB2664AEC9008B9781 /* ListHoaDonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227307FA2664AEC9008B9781 /* ListHoaDonTableViewCell.swift */; };
+		227307FD2664AFD4008B9781 /* ListHoaDonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227307FC2664AFD4008B9781 /* ListHoaDonViewController.swift */; };
+		22A35D4426626D64001C5991 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A35D4326626D64001C5991 /* CustomTextView.swift */; };
+		22B8C1BD266233D300733244 /* DBKhachHang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B8C1BC266233D300733244 /* DBKhachHang.swift */; };
+		22B8C1BF266236BB00733244 /* KhachHangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B8C1BE266236BB00733244 /* KhachHangViewController.swift */; };
+		22B8C1C126623E9A00733244 /* KhachHangTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B8C1C026623E9A00733244 /* KhachHangTableViewCell.swift */; };
+		22D8F9932661E94D00FBF0C6 /* NhaCungCapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8F9922661E94D00FBF0C6 /* NhaCungCapTableViewCell.swift */; };
+		22D9B7AA26625810005026AF /* DBVatLieu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9B7A926625810005026AF /* DBVatLieu.swift */; };
+		22D9B7AC26625A18005026AF /* AddVatLieuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9B7AB26625A18005026AF /* AddVatLieuViewController.swift */; };
+		22DED11226632540008BEDA2 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DED11126632540008BEDA2 /* CustomStackView.swift */; };
+		22DED114266339B5008BEDA2 /* EditVatLieuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DED113266339B5008BEDA2 /* EditVatLieuViewController.swift */; };
+		22E844DC26619BA2008850EF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E844DB26619BA2008850EF /* CustomTextField.swift */; };
+		22E844DF2661A6D3008850EF /* DBNhanVien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E844DE2661A6D3008850EF /* DBNhanVien.swift */; };
+		22E844E12661AF68008850EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22E844E02661AF68008850EF /* GoogleService-Info.plist */; };
+		22E844E32661C1D6008850EF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E844E22661C1D6008850EF /* CustomButton.swift */; };
+		22E844E52661C6F0008850EF /* DangNhapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E844E42661C6F0008850EF /* DangNhapViewController.swift */; };
+		22E844E72661D589008850EF /* NhaCungCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E844E62661D589008850EF /* NhaCungCap.swift */; };
+		22E844E92661D8F4008850EF /* DBNhaCungCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E844E82661D8F4008850EF /* DBNhaCungCap.swift */; };
+		22E844EB2661E637008850EF /* QLNhaCungCapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E844EA2661E637008850EF /* QLNhaCungCapViewController.swift */; };
+		4B1FB2ACC97DAECAFC5EB825 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_Xay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D9CC5A58948983621AB585 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_Xay.framework */; };
+		CD169BBDFA55FC3D5B3B16B5 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991659AEF8BC601DDA1BF7E3 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2225D9C72661327400FD018B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2225D9AA2661327100FD018B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2225D9B12661327100FD018B;
+			remoteInfo = "Quan Ly Ban Hang Vat Lieu Xay";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12756025ED41782E00798B30 /* Pods-Quan Ly Ban Hang Vat Lieu Xay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quan Ly Ban Hang Vat Lieu Xay.debug.xcconfig"; path = "Target Support Files/Pods-Quan Ly Ban Hang Vat Lieu Xay/Pods-Quan Ly Ban Hang Vat Lieu Xay.debug.xcconfig"; sourceTree = "<group>"; };
+		2225D9B22661327100FD018B /* Quan Ly Ban Hang Vat Lieu Xay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quan Ly Ban Hang Vat Lieu Xay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2225D9B52661327100FD018B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2225D9B72661327100FD018B /* DangKyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangKyViewController.swift; sourceTree = "<group>"; };
+		2225D9BA2661327100FD018B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2225D9BC2661327400FD018B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2225D9BF2661327400FD018B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2225D9C12661327400FD018B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2225D9C62661327400FD018B /* Quan Ly Ban Hang Vat Lieu XayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quan Ly Ban Hang Vat Lieu XayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2225D9CA2661327400FD018B /* Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.swift; sourceTree = "<group>"; };
+		2225D9CC2661327400FD018B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2225D9D7266134B100FD018B /* KhachHang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhachHang.swift; sourceTree = "<group>"; };
+		2225D9D9266134E500FD018B /* NhanVien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhanVien.swift; sourceTree = "<group>"; };
+		2225D9DB266134FD00FD018B /* VatLieu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VatLieu.swift; sourceTree = "<group>"; };
+		2225D9DD2661407600FD018B /* HoaDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoaDon.swift; sourceTree = "<group>"; };
+		22436C15266472D400966F56 /* KhachHangHDTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhachHangHDTableViewCell.swift; sourceTree = "<group>"; };
+		22436C1726648D1100966F56 /* DBHoaDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHoaDon.swift; sourceTree = "<group>"; };
+		22436C192664927800966F56 /* HoaDonXemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoaDonXemViewController.swift; sourceTree = "<group>"; };
+		226BA1312663CC5B00D93D39 /* SanPhamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanPhamTableViewCell.swift; sourceTree = "<group>"; };
+		226BA1332663CD0D00D93D39 /* HoaDonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoaDonViewController.swift; sourceTree = "<group>"; };
+		226DCFB526636D0800687527 /* ListVatLieuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVatLieuViewController.swift; sourceTree = "<group>"; };
+		226DCFB726636D5100687527 /* VatLieuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VatLieuTableViewCell.swift; sourceTree = "<group>"; };
+		226DCFB9266387EE00687527 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		226DCFBB2663891D00687527 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		226DCFBD266389C500687527 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		227307FA2664AEC9008B9781 /* ListHoaDonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHoaDonTableViewCell.swift; sourceTree = "<group>"; };
+		227307FC2664AFD4008B9781 /* ListHoaDonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHoaDonViewController.swift; sourceTree = "<group>"; };
+		22A35D4326626D64001C5991 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		22B8C1BC266233D300733244 /* DBKhachHang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBKhachHang.swift; sourceTree = "<group>"; };
+		22B8C1BE266236BB00733244 /* KhachHangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhachHangViewController.swift; sourceTree = "<group>"; };
+		22B8C1C026623E9A00733244 /* KhachHangTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhachHangTableViewCell.swift; sourceTree = "<group>"; };
+		22D8F9922661E94D00FBF0C6 /* NhaCungCapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhaCungCapTableViewCell.swift; sourceTree = "<group>"; };
+		22D9B7A926625810005026AF /* DBVatLieu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBVatLieu.swift; sourceTree = "<group>"; };
+		22D9B7AB26625A18005026AF /* AddVatLieuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVatLieuViewController.swift; sourceTree = "<group>"; };
+		22DED11126632540008BEDA2 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		22DED113266339B5008BEDA2 /* EditVatLieuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVatLieuViewController.swift; sourceTree = "<group>"; };
+		22E844DB26619BA2008850EF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		22E844DE2661A6D3008850EF /* DBNhanVien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBNhanVien.swift; sourceTree = "<group>"; };
+		22E844E02661AF68008850EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22E844E22661C1D6008850EF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		22E844E42661C6F0008850EF /* DangNhapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangNhapViewController.swift; sourceTree = "<group>"; };
+		22E844E62661D589008850EF /* NhaCungCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhaCungCap.swift; sourceTree = "<group>"; };
+		22E844E82661D8F4008850EF /* DBNhaCungCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBNhaCungCap.swift; sourceTree = "<group>"; };
+		22E844EA2661E637008850EF /* QLNhaCungCapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLNhaCungCapViewController.swift; sourceTree = "<group>"; };
+		8596AE57945C2BCFCFDAFDE9 /* Pods-Quan Ly Ban Hang Vat Lieu XayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quan Ly Ban Hang Vat Lieu XayTests.release.xcconfig"; path = "Target Support Files/Pods-Quan Ly Ban Hang Vat Lieu XayTests/Pods-Quan Ly Ban Hang Vat Lieu XayTests.release.xcconfig"; sourceTree = "<group>"; };
+		991659AEF8BC601DDA1BF7E3 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B973B90238D395FF9DE53259 /* Pods-Quan Ly Ban Hang Vat Lieu Xay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quan Ly Ban Hang Vat Lieu Xay.release.xcconfig"; path = "Target Support Files/Pods-Quan Ly Ban Hang Vat Lieu Xay/Pods-Quan Ly Ban Hang Vat Lieu Xay.release.xcconfig"; sourceTree = "<group>"; };
+		C0D9CC5A58948983621AB585 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_Xay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quan_Ly_Ban_Hang_Vat_Lieu_Xay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6499D769FAECF0CBEB871E7 /* Pods-Quan Ly Ban Hang Vat Lieu XayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quan Ly Ban Hang Vat Lieu XayTests.debug.xcconfig"; path = "Target Support Files/Pods-Quan Ly Ban Hang Vat Lieu XayTests/Pods-Quan Ly Ban Hang Vat Lieu XayTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2225D9AF2661327100FD018B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1FB2ACC97DAECAFC5EB825 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_Xay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2225D9C32661327400FD018B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD169BBDFA55FC3D5B3B16B5 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DFBA7908988D47BB60CC184 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12756025ED41782E00798B30 /* Pods-Quan Ly Ban Hang Vat Lieu Xay.debug.xcconfig */,
+				B973B90238D395FF9DE53259 /* Pods-Quan Ly Ban Hang Vat Lieu Xay.release.xcconfig */,
+				C6499D769FAECF0CBEB871E7 /* Pods-Quan Ly Ban Hang Vat Lieu XayTests.debug.xcconfig */,
+				8596AE57945C2BCFCFDAFDE9 /* Pods-Quan Ly Ban Hang Vat Lieu XayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2225D9A92661327100FD018B = {
+			isa = PBXGroup;
+			children = (
+				2225D9B42661327100FD018B /* Quan Ly Ban Hang Vat Lieu Xay */,
+				2225D9C92661327400FD018B /* Quan Ly Ban Hang Vat Lieu XayTests */,
+				2225D9B32661327100FD018B /* Products */,
+				0DFBA7908988D47BB60CC184 /* Pods */,
+				88D3590ED61B7DBEE86B0C4A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2225D9B32661327100FD018B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2225D9B22661327100FD018B /* Quan Ly Ban Hang Vat Lieu Xay.app */,
+				2225D9C62661327400FD018B /* Quan Ly Ban Hang Vat Lieu XayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2225D9B42661327100FD018B /* Quan Ly Ban Hang Vat Lieu Xay */ = {
+			isa = PBXGroup;
+			children = (
+				22E844E02661AF68008850EF /* GoogleService-Info.plist */,
+				2225D9B92661327100FD018B /* Main.storyboard */,
+				22E844DD2661A6BE008850EF /* Database */,
+				22E844DA26619B27008850EF /* Views */,
+				22E844D9266199EE008850EF /* Controllers */,
+				2225D9D62661349E00FD018B /* Models */,
+				2225D9D52661328400FD018B /* System Files */,
+			);
+			path = "Quan Ly Ban Hang Vat Lieu Xay";
+			sourceTree = "<group>";
+		};
+		2225D9C92661327400FD018B /* Quan Ly Ban Hang Vat Lieu XayTests */ = {
+			isa = PBXGroup;
+			children = (
+				2225D9CA2661327400FD018B /* Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.swift */,
+				2225D9CC2661327400FD018B /* Info.plist */,
+			);
+			path = "Quan Ly Ban Hang Vat Lieu XayTests";
+			sourceTree = "<group>";
+		};
+		2225D9D52661328400FD018B /* System Files */ = {
+			isa = PBXGroup;
+			children = (
+				2225D9BC2661327400FD018B /* Assets.xcassets */,
+				2225D9B52661327100FD018B /* AppDelegate.swift */,
+				2225D9BE2661327400FD018B /* LaunchScreen.storyboard */,
+				2225D9C12661327400FD018B /* Info.plist */,
+			);
+			path = "System Files";
+			sourceTree = "<group>";
+		};
+		2225D9D62661349E00FD018B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2225D9D7266134B100FD018B /* KhachHang.swift */,
+				2225D9D9266134E500FD018B /* NhanVien.swift */,
+				2225D9DB266134FD00FD018B /* VatLieu.swift */,
+				2225D9DD2661407600FD018B /* HoaDon.swift */,
+				22E844E62661D589008850EF /* NhaCungCap.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22E844D9266199EE008850EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2225D9B72661327100FD018B /* DangKyViewController.swift */,
+				22E844E42661C6F0008850EF /* DangNhapViewController.swift */,
+				22E844EA2661E637008850EF /* QLNhaCungCapViewController.swift */,
+				22D8F9922661E94D00FBF0C6 /* NhaCungCapTableViewCell.swift */,
+				22B8C1BE266236BB00733244 /* KhachHangViewController.swift */,
+				22B8C1C026623E9A00733244 /* KhachHangTableViewCell.swift */,
+				22D9B7AB26625A18005026AF /* AddVatLieuViewController.swift */,
+				22DED113266339B5008BEDA2 /* EditVatLieuViewController.swift */,
+				226DCFB526636D0800687527 /* ListVatLieuViewController.swift */,
+				226DCFB726636D5100687527 /* VatLieuTableViewCell.swift */,
+				226DCFBB2663891D00687527 /* HomeViewController.swift */,
+				226DCFBD266389C500687527 /* MenuCollectionViewCell.swift */,
+				226BA1312663CC5B00D93D39 /* SanPhamTableViewCell.swift */,
+				226BA1332663CD0D00D93D39 /* HoaDonViewController.swift */,
+				22436C15266472D400966F56 /* KhachHangHDTableViewCell.swift */,
+				22436C192664927800966F56 /* HoaDonXemViewController.swift */,
+				227307FA2664AEC9008B9781 /* ListHoaDonTableViewCell.swift */,
+				227307FC2664AFD4008B9781 /* ListHoaDonViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		22E844DA26619B27008850EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22E844DB26619BA2008850EF /* CustomTextField.swift */,
+				22E844E22661C1D6008850EF /* CustomButton.swift */,
+				22A35D4326626D64001C5991 /* CustomTextView.swift */,
+				22DED11126632540008BEDA2 /* CustomStackView.swift */,
+				226DCFB9266387EE00687527 /* CustomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22E844DD2661A6BE008850EF /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				22E844DE2661A6D3008850EF /* DBNhanVien.swift */,
+				22E844E82661D8F4008850EF /* DBNhaCungCap.swift */,
+				22B8C1BC266233D300733244 /* DBKhachHang.swift */,
+				22D9B7A926625810005026AF /* DBVatLieu.swift */,
+				22436C1726648D1100966F56 /* DBHoaDon.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		88D3590ED61B7DBEE86B0C4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0D9CC5A58948983621AB585 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_Xay.framework */,
+				991659AEF8BC601DDA1BF7E3 /* Pods_Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2225D9B12661327100FD018B /* Quan Ly Ban Hang Vat Lieu Xay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2225D9CF2661327400FD018B /* Build configuration list for PBXNativeTarget "Quan Ly Ban Hang Vat Lieu Xay" */;
+			buildPhases = (
+				B21B084EE9CB0AC0C1D67587 /* [CP] Check Pods Manifest.lock */,
+				2225D9AE2661327100FD018B /* Sources */,
+				2225D9AF2661327100FD018B /* Frameworks */,
+				2225D9B02661327100FD018B /* Resources */,
+				2881568335DEDAE5EA01EBD2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quan Ly Ban Hang Vat Lieu Xay";
+			productName = "Quan Ly Ban Hang Vat Lieu Xay";
+			productReference = 2225D9B22661327100FD018B /* Quan Ly Ban Hang Vat Lieu Xay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2225D9C52661327400FD018B /* Quan Ly Ban Hang Vat Lieu XayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2225D9D22661327400FD018B /* Build configuration list for PBXNativeTarget "Quan Ly Ban Hang Vat Lieu XayTests" */;
+			buildPhases = (
+				A4A08D0EED968E10359F65B7 /* [CP] Check Pods Manifest.lock */,
+				2225D9C22661327400FD018B /* Sources */,
+				2225D9C32661327400FD018B /* Frameworks */,
+				2225D9C42661327400FD018B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2225D9C82661327400FD018B /* PBXTargetDependency */,
+			);
+			name = "Quan Ly Ban Hang Vat Lieu XayTests";
+			productName = "Quan Ly Ban Hang Vat Lieu XayTests";
+			productReference = 2225D9C62661327400FD018B /* Quan Ly Ban Hang Vat Lieu XayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2225D9AA2661327100FD018B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = DoAnIOS;
+				TargetAttributes = {
+					2225D9B12661327100FD018B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					2225D9C52661327400FD018B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 2225D9B12661327100FD018B;
+					};
+				};
+			};
+			buildConfigurationList = 2225D9AD2661327100FD018B /* Build configuration list for PBXProject "Quan Ly Ban Hang Vat Lieu Xay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2225D9A92661327100FD018B;
+			productRefGroup = 2225D9B32661327100FD018B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2225D9B12661327100FD018B /* Quan Ly Ban Hang Vat Lieu Xay */,
+				2225D9C52661327400FD018B /* Quan Ly Ban Hang Vat Lieu XayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2225D9B02661327100FD018B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2225D9C02661327400FD018B /* LaunchScreen.storyboard in Resources */,
+				22E844E12661AF68008850EF /* GoogleService-Info.plist in Resources */,
+				2225D9BD2661327400FD018B /* Assets.xcassets in Resources */,
+				2225D9BB2661327100FD018B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2225D9C42661327400FD018B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2881568335DEDAE5EA01EBD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quan Ly Ban Hang Vat Lieu Xay/Pods-Quan Ly Ban Hang Vat Lieu Xay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quan Ly Ban Hang Vat Lieu Xay/Pods-Quan Ly Ban Hang Vat Lieu Xay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quan Ly Ban Hang Vat Lieu Xay/Pods-Quan Ly Ban Hang Vat Lieu Xay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A08D0EED968E10359F65B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quan Ly Ban Hang Vat Lieu XayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B21B084EE9CB0AC0C1D67587 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quan Ly Ban Hang Vat Lieu Xay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2225D9AE2661327100FD018B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D9B7AA26625810005026AF /* DBVatLieu.swift in Sources */,
+				226BA1342663CD0D00D93D39 /* HoaDonViewController.swift in Sources */,
+				2225D9DA266134E500FD018B /* NhanVien.swift in Sources */,
+				226BA1322663CC5B00D93D39 /* SanPhamTableViewCell.swift in Sources */,
+				2225D9D8266134B100FD018B /* KhachHang.swift in Sources */,
+				22D9B7AC26625A18005026AF /* AddVatLieuViewController.swift in Sources */,
+				22DED11226632540008BEDA2 /* CustomStackView.swift in Sources */,
+				22E844E92661D8F4008850EF /* DBNhaCungCap.swift in Sources */,
+				2225D9B82661327100FD018B /* DangKyViewController.swift in Sources */,
+				226DCFB626636D0800687527 /* ListVatLieuViewController.swift in Sources */,
+				226DCFB826636D5100687527 /* VatLieuTableViewCell.swift in Sources */,
+				227307FB2664AEC9008B9781 /* ListHoaDonTableViewCell.swift in Sources */,
+				22E844EB2661E637008850EF /* QLNhaCungCapViewController.swift in Sources */,
+				22D8F9932661E94D00FBF0C6 /* NhaCungCapTableViewCell.swift in Sources */,
+				22E844E72661D589008850EF /* NhaCungCap.swift in Sources */,
+				2225D9DE2661407600FD018B /* HoaDon.swift in Sources */,
+				22E844E52661C6F0008850EF /* DangNhapViewController.swift in Sources */,
+				226DCFBC2663891D00687527 /* HomeViewController.swift in Sources */,
+				226DCFBE266389C500687527 /* MenuCollectionViewCell.swift in Sources */,
+				22A35D4426626D64001C5991 /* CustomTextView.swift in Sources */,
+				22E844E32661C1D6008850EF /* CustomButton.swift in Sources */,
+				22E844DF2661A6D3008850EF /* DBNhanVien.swift in Sources */,
+				22E844DC26619BA2008850EF /* CustomTextField.swift in Sources */,
+				22B8C1BF266236BB00733244 /* KhachHangViewController.swift in Sources */,
+				22436C16266472D400966F56 /* KhachHangHDTableViewCell.swift in Sources */,
+				226DCFBA266387EE00687527 /* CustomView.swift in Sources */,
+				22436C1826648D1100966F56 /* DBHoaDon.swift in Sources */,
+				22436C1A2664927800966F56 /* HoaDonXemViewController.swift in Sources */,
+				22B8C1C126623E9A00733244 /* KhachHangTableViewCell.swift in Sources */,
+				22DED114266339B5008BEDA2 /* EditVatLieuViewController.swift in Sources */,
+				2225D9DC266134FD00FD018B /* VatLieu.swift in Sources */,
+				2225D9B62661327100FD018B /* AppDelegate.swift in Sources */,
+				22B8C1BD266233D300733244 /* DBKhachHang.swift in Sources */,
+				227307FD2664AFD4008B9781 /* ListHoaDonViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2225D9C22661327400FD018B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2225D9CB2661327400FD018B /* Quan_Ly_Ban_Hang_Vat_Lieu_XayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2225D9C82661327400FD018B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2225D9B12661327100FD018B /* Quan Ly Ban Hang Vat Lieu Xay */;
+			targetProxy = 2225D9C72661327400FD018B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2225D9B92661327100FD018B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2225D9BA2661327100FD018B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2225D9BE2661327400FD018B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2225D9BF2661327400FD018B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2225D9CD2661327400FD018B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2225D9CE2661327400FD018B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2225D9D02661327400FD018B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12756025ED41782E00798B30 /* Pods-Quan Ly Ban Hang Vat Lieu Xay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Quan Ly Ban Hang Vat Lieu Xay/System Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.edu.tdc.Quan-Ly-Ban-Hang-Vat-Lieu-Xay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2225D9D12661327400FD018B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B973B90238D395FF9DE53259 /* Pods-Quan Ly Ban Hang Vat Lieu Xay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Quan Ly Ban Hang Vat Lieu Xay/System Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.edu.tdc.Quan-Ly-Ban-Hang-Vat-Lieu-Xay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2225D9D32661327400FD018B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6499D769FAECF0CBEB871E7 /* Pods-Quan Ly Ban Hang Vat Lieu XayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quan Ly Ban Hang Vat Lieu XayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.edu.tdc.Quan-Ly-Ban-Hang-Vat-Lieu-XayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quan Ly Ban Hang Vat Lieu Xay.app/Quan Ly Ban Hang Vat Lieu Xay";
+			};
+			name = Debug;
+		};
+		2225D9D42661327400FD018B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8596AE57945C2BCFCFDAFDE9 /* Pods-Quan Ly Ban Hang Vat Lieu XayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quan Ly Ban Hang Vat Lieu XayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.edu.tdc.Quan-Ly-Ban-Hang-Vat-Lieu-XayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quan Ly Ban Hang Vat Lieu Xay.app/Quan Ly Ban Hang Vat Lieu Xay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2225D9AD2661327100FD018B /* Build configuration list for PBXProject "Quan Ly Ban Hang Vat Lieu Xay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2225D9CD2661327400FD018B /* Debug */,
+				2225D9CE2661327400FD018B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2225D9CF2661327400FD018B /* Build configuration list for PBXNativeTarget "Quan Ly Ban Hang Vat Lieu Xay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2225D9D02661327400FD018B /* Debug */,
+				2225D9D12661327400FD018B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2225D9D22661327400FD018B /* Build configuration list for PBXNativeTarget "Quan Ly Ban Hang Vat Lieu XayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2225D9D32661327400FD018B /* Debug */,
+				2225D9D42661327400FD018B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2225D9AA2661327100FD018B /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Quan_Ly_Ban_Hang_Vat_Lieu_XayTests {
+  umbrella header "Pods-Quan Ly Ban Hang Vat Lieu XayTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
